@@ -13,7 +13,7 @@ const { logger } = require('./api/middleware/middleware');
 
 // Server & ENV
 const server = express();
-const port = process.env.PORT || 2000;
+const port = process.env.PORT || 5000;
 
 // Use Json
 server.use(express.json());
@@ -32,7 +32,6 @@ server.use((err, req, res, next) => {
   res.status(500).json({
     message: "Something went wrong. Please try again later.",
   })
-  next();
 })
 
 // Server Listens
