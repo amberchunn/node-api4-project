@@ -21,9 +21,9 @@ server.use(helmet())
 server.use(cors())
 
 // Use Routes
-server.use("/", homeRouter)
-server.use("/posts", postsRouter);
-server.use("/users", usersRouter);
+server.use(homeRouter)
+server.use(postsRouter);
+server.use(usersRouter);
 server.use(logger);
 
 // Error Middleware
