@@ -1,15 +1,13 @@
 {
     "name": "node-api4-project",
     "version": "1.0.0",
-    "private": true,
     "scripts": {
         "watch": "nodemon --require dotenv/config index.js",
-        "start": "node index.js",
-        "build": "react-scripts build"
+        "start": "node index.js"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/LambdaSchool/node-api3-project.git"
+        "url": "git+https://github.com/amberchunn/node-api4-project.git"
     },
     "dependencies": {
         "cors": "^2.8.5",
